@@ -1,7 +1,14 @@
-$myblue: #193773;
-$mypink: #F6AAEE;
-$myviolet: #AF9AED;
+$myred: #AD3652;
+$mymonored: #C84E6B;
+$mywhite: #F5F5F5;
+$myblack: #0E0E0E;
+$mypurple: #9136AD;
 
 $body-font-family: 'Irish Grover', cursive;
 $heading-font-family: 'Italianno', cursive;
 
+
+html, body, #app, #app>div {
+    height: 100%;
+    width: 100%;
+  }

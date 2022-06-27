@@ -1,39 +1,130 @@
-$myblue: #193773;
-$mypink: #F6AAEE;
-$myviolet: #AF9AED;
-$mywhite: #FAF5FB;
+$myred: #AD3652;
+$mymonored: #C84E6B;
+$mywhite: #F5F5F5;
+$myblack: #0E0E0E;
+$mypurple: #9136AD;
 
 $body-font-family: 'Irish Grover', cursive;
 $heading-font-family: 'Italianno', cursive;
-
-* {
+$myfillcolor: #765898;
+body {
     margin: 0;
-    border: 0;
     padding: 0;
+    border: 0;
+    width: auto;
+    height: auto;
+    overflow: hidden;
 }
+
 
 .outterContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: top;
-    text-align: center;
-    background-image: url('../../assets/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position:fixed;
+    justify-content: center;
+    align-content: center;
+    background-color: #0E0E0E;
+    width: 100vw;
+    height: 100vh;
+}
+.svg-container { 
+	display: flex;
+    position: relative;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+}
+.svg-content {
+    display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+    cursor: pointer;
 }
 
-
-.homeTitle {
-    position: absolute;
-    font-family: $heading-font-family;
-    color: $myblue;
-    font-size: 7rem;
-    margin-top: 20rem;  
-    transform: rotateZ(-30deg);
-    background-color: rgba(250, 245, 251, .1); 
-    
+.titleContainer {
+    display: flex;
+    position: fixed;
+    width: 25%;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 2;
+}
+.title-content {
+    display: inline-block;
+	position: absolute;
+    align-self: center;
+    justify-self: center;
+	top: 0;
+	left: 0;
+}
+.videodiv {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .1;
+    height:  100%;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5vh;
+    z-index: 1;
+}
+.videocontent {
+    display: inline-block;
+	position: absolute;
+    align-self: center;
+    justify-self: center;
+	top: 0;
+	left: 0;
+}
+#Polygonone:hover {
+    fill: $myfillcolor;
+}
+#Polygontwo:hover {
+    fill: $myfillcolor;
+}
+#Polygonthree:hover {
+    fill: $myfillcolor;
+}
+#Polygonfour:hover {
+    fill: $myfillcolor;
+}
+#Polygonfive:hover {
+    fill: $myfillcolor;
+}
+#Polygonsix:hover {
+    fill: $myfillcolor;
+}
+#Polygonseven:hover {
+    fill: $myfillcolor;
+}
+#Polygoneight:hover {
+    fill: $myfillcolor;
+}
+#Polygonnine:hover {
+    fill: $myfillcolor;
+}
+#Polygonten:hover {
+    fill: $myfillcolor;
+}
+#Polygoneleven:hover {
+    fill: $myfillcolor;
+}
+#Polygontwelve:hover {
+    fill: $myfillcolor;
+}
+#Polygonthirteen:hover {
+    fill: $myfillcolor;
+}
+#ev:hover {
+    fill: $myfillcolor;
+}
+#nr:hover {
+    fill: $myfillcolor;
 }
