@@ -63,10 +63,8 @@ const Home = () => {
           ref={videoEl}
         />
       </div>               
-            <div className='crossContainer'>
                 <div className='crossOne'></div>
                 <div className='crossTwo'></div>
-            </div>
             </div>
         
     )
