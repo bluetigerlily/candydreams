@@ -8,3 +8,9 @@ $mypurple: #9136AD;
 $body-font-family: 'Irish Grover', cursive;
 $heading-font-family: 'Italianno', cursive;
 
+.appnavbar {
+    position: sticky;
+    top: .1em;
+    width: 100%;
+    z-index: 3;
+}

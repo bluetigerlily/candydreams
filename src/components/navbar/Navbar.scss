@@ -1,0 +1,28 @@
+$myred: #AD3652;
+$mymonored: #C84E6B;
+$mywhite: #F5F5F5;
+$myblack: #0E0E0E;
+$mypurple: #9136AD;
+
+$body-font-family: 'Irish Grover', cursive;
+$heading-font-family: 'Italianno', cursive;
+
+.NavbarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    column-gap: 2rem;
+    background-color: $myred;
+    color: $mywhite;
+
+}
+a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+a:hover {
+    color: $myred;
+    background-color: $mywhite;
+}

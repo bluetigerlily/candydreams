@@ -18,6 +18,9 @@ const Home = () => {
   }, []);
 
     return (
+      <section 
+        title="Home"
+        id='Home'>
         <div className='outterContainer'>
         
            <div className='svg-container'>
@@ -66,7 +69,7 @@ const Home = () => {
                 <div className='crossOne'></div>
                 <div className='crossTwo'></div>
             </div>
-        
+      </section>
     )
 };
 
