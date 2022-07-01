@@ -51,7 +51,15 @@ const Home = () => {
         <div className='bottomContainer'>               
         <div className='bottomArea'></div>
         <div className='bottomText'><h1 className='bottomTexttitle'>Shinji Ikari</h1>
-        <h3 className='bottomTextinfo'>Son of the series antagonist Gendo Ikari, Shinji was summoned to Tokyo-3 to be the pilot of Evangelion Unit-01</h3></div>
+        <h3 className='bottomTextinfo'>Son of the series antagonist Gendo Ikari, Shinji was summoned to Tokyo-3 to be the pilot of Evangelion Unit-01</h3>
+          <div className='decorationContainer'>
+          <svg width="100" height="90" viewBox="0 0 358 622" fill="none" xmlns="http://www.w3.org/2000/svg" className='decorationsvg'>
+<path d="M17.2468 62.7887L125 0.57735L232.753 62.7887V187.211L125 249.423L17.2468 187.211V62.7887Z" fill="#AD3652" className='polygonOne' stroke="black"/>
+<path d="M17.2468 434.789L125 372.577L232.753 434.789V559.211L125 621.423L17.2468 559.211V434.789Z" fill="#AD3652" className='polygonTwo' stroke="black"/>
+<path d="M125.247 249.789L233 187.577L340.753 249.789V374.211L233 436.423L125.247 374.211V249.789Z" fill="#AD3652" className='polygonThree' stroke="black"/>
+</svg>
+          </div>
+        </div>
         </div>
           </div>
       </section>

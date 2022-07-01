@@ -16,7 +16,7 @@ body {
     border: 0;
     width: auto;
     height: auto;
-    overflow: hidden;
+    overflow: hidden
 }
 
 
@@ -27,7 +27,6 @@ body {
     background-color: #0E0E0E;
     height: 100vh;
     flex-direction: column;
-    overflow: hidden;
 }
 
 
@@ -94,6 +93,7 @@ body {
     display: inline-flex;
     flex-direction: column;
     margin-top: 1.5rem;
+    overflow: hidden;
     border-left: .05rem solid $mypurple;
 }
 .bottomTexttitle {
@@ -105,8 +105,15 @@ body {
 .bottomTextinfo {
     font-size: 1rem;
     flex-flow: wrap;
-    width: 14rem;
+    width: 13rem;
+    position: relative;
 }
+.decorationContainer {
+    position: absolute;
+    padding-left: 20%;
+    opacity: .9;
+}
+
 #ev:hover {
     fill: $myfillcolor;
     filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
@@ -123,6 +130,10 @@ body {
         height: 0;
     }
     .bottomText {
+        width: 0;
+        height: 0;
+    }
+    .decorationsvg {
         width: 0;
         height: 0;
     }
