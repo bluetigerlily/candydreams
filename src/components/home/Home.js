@@ -23,26 +23,8 @@ const Home = () => {
         id='Home'>
         <div className='outterContainer'>
         
-           <div className='svg-container'>
-                <svg viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg-content" preserveAspectRatio="xMinYMin meet">
-                    <g id="polygons">
-                <path id="Polygonone" d="M-89.7532 39.7887L18 -22.4226L125.753 39.7887V164.211L18 226.423L-89.7532 164.211V39.7887Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygontwo" d="M18.2468 226.789L126 164.577L233.753 226.789V351.211L126 413.423L18.2468 351.211V226.789Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygonsix" d="M1111.25 476.789L1219 414.577L1326.75 476.789V601.211L1219 663.423L1111.25 601.211V476.789Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygoneight" d="M1004.25 663.789L1112 601.577L1219.75 663.789V788.211L1112 850.423L1004.25 788.211V663.789Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygonnine" d="M1112.25 850.789L1220 788.577L1327.75 850.789V975.211L1220 1037.42L1112.25 975.211V850.789Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygonthirteen" d="M897.247 850.789L1005 788.577L1112.75 850.789V975.211L1005 1037.42L897.247 975.211V850.789Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygonfive" d="M126.247 39.7887L234 -22.4226L341.753 39.7887V164.211L234 226.423L126.247 164.211V39.7887Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygonthree" d="M-197.753 226.789L-90 164.577L17.7532 226.789V351.211L-90 413.423L-197.753 351.211V226.789Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygonfour" d="M18.2468 -147.211L126 -209.423L233.753 -147.211V-22.7887L126 39.4227L18.2468 -22.7887V-147.211Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygonseven" d="M1327.25 476.789L1435 414.577L1542.75 476.789V601.211L1435 663.423L1327.25 601.211V476.789Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygonten" d="M1328.25 850.789L1436 788.577L1543.75 850.789V975.211L1436 1037.42L1328.25 975.211V850.789Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygoneleven" d="M1220.25 1037.79L1328 975.577L1435.75 1037.79V1162.21L1328 1224.42L1220.25 1162.21V1037.79Z" fill="#AD3652" stroke="black"/>
-                <path id="Polygontwelve" d="M1005.25 1037.79L1113 975.577L1220.75 1037.79V1162.21L1113 1224.42L1005.25 1162.21V1037.79Z" fill="#AD3652" stroke="black"/>
-                    </g>
-                </svg>
-            </div>
-            <div className='titleContainer'>
+          
+          <div className='titleContainer'>
             <svg  viewBox="0 0 750 750" fill="none" xmlns="http://www.w3.org/2000/svg" className="title-content" preserveAspectRatio="xMinYMin meet">
                 <g id="nervlogo">
                     <path id="ev" 
@@ -52,9 +34,9 @@ const Home = () => {
                         fill="#AD3652"/>
                 </g>
             </svg>
-            </div> 
-            <div className='videodiv'>
-        <video
+          </div> 
+        <div className='videodiv'>
+          <video
           style={{ maxWidth: "100%", width: "100%", margin: "0 auto" }}
           className='videocontent'
           playsInline
@@ -64,11 +46,14 @@ const Home = () => {
           alt="All the devices"
           src={EvaVideo}
           ref={videoEl}
-        />
-      </div>               
-                <div className='crossOne'></div>
-                <div className='crossTwo'></div>
-            </div>
+          />
+        </div>
+        <div className='bottomContainer'>               
+        <div className='bottomArea'></div>
+        <div className='bottomText'><h1 className='bottomTexttitle'>Shinji Ikari</h1>
+        <h3 className='bottomTextinfo'>Son of the series antagonist Gendo Ikari, Shinji was summoned to Tokyo-3 to be the pilot of Evangelion Unit-01</h3></div>
+        </div>
+          </div>
       </section>
     )
 };

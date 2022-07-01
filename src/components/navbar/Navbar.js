@@ -6,6 +6,10 @@ const Navbar = () => {
 
     return (
         <div className='NavbarContainer'>
+            <div className='logoContainer'>
+                NERV HQ
+            </div>
+            <div className='linkContainer'>
                 <Link to='Home'
                     smooth={true}
                     offset={-70}
@@ -21,6 +25,7 @@ const Navbar = () => {
                     offset={-70}
                     duration={500}>
                     Information</Link>
+            </div>
         </div>
     );
 }

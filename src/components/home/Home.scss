@@ -4,8 +4,8 @@ $mywhite: #F5F5F5;
 $myblack: #0E0E0E;
 $mypurple: #9136AD;
 
-$body-font-family: 'Irish Grover', cursive;
-$heading-font-family: 'Italianno', cursive;
+$body-font-family:'Playfair Display', serif;
+$heading-font-family: 'Roboto', sans-serif;
 $myfillcolor: rgb(118,88,152);
 $mystrokecolor: rgb(168, 119, 200);
 
@@ -16,6 +16,7 @@ body {
     border: 0;
     width: auto;
     height: auto;
+    overflow: hidden;
 }
 
 
@@ -24,30 +25,21 @@ body {
     justify-content: center;
     align-content: center;
     background-color: #0E0E0E;
-    height: 200vh;
-}
-.svg-container { 
-	display: flex;
-    position: relative;
     height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+    flex-direction: column;
+    overflow: hidden;
 }
-.svg-content {
-    display: inline-block;
-	position: absolute;
-	top: 0;
-	left: 0;
-    cursor: pointer;
-}
+
+
 
 .titleContainer {
     display: flex;
-    position: fixed;
-    width: 30%;
-    margin-top: 10vh;
+    order: 0;
+    position: relative;
+    width: 35%;
+    justify-self: center;
+    align-self: center;
+    margin-top: 7vh;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -63,8 +55,9 @@ body {
 	left: 0;
 }
 .videodiv {
-    position: fixed;
+    position: absolute;
     display: flex;
+    order: 0;
     justify-content: center;
     align-items: center;
     opacity: .1;
@@ -78,71 +71,41 @@ body {
 	top: 0;
 	left: 0;
 }
-
-#Polygonone:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;
+.bottomContainer {
+    display: flex;
+    order: 1;
+    flex-direction: row;
+    justify-content: left;
+    text-align: left;
+    column-gap: 1rem;
+    
 }
-#Polygontwo:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;
+.bottomArea {
+    background-image: url('../../assets/unit001.png');
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 20rem;
+    background-size: cover;
 }
-#Polygonthree:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;
+.bottomText {
+    color: $mywhite;
+    height: 21rem;
+    padding-left: 4%;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    border-left: .05rem solid $mypurple;
 }
-#Polygonfour:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;
+.bottomTexttitle {
+    border-bottom: .05rem solid $myfillcolor;
+    font-size: 2rem;
+    width: fit-content;
+    padding-right: 2rem;
 }
-#Polygonfive:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;  
-}
-#Polygonsix:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;
-}
-#Polygonseven:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));   
-    stroke: $mystrokecolor;
-}
-#Polygoneight:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));    
-    stroke: $mystrokecolor;
-}
-#Polygonnine:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;
-}
-#Polygonten:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;
-}
-#Polygoneleven:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;
-}
-#Polygontwelve:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;
-}
-#Polygonthirteen:hover {
-    fill: $myfillcolor;
-    filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
-    stroke: $mystrokecolor;
+.bottomTextinfo {
+    font-size: 1rem;
+    flex-flow: wrap;
+    width: 14rem;
 }
 #ev:hover {
     fill: $myfillcolor;
@@ -153,4 +116,38 @@ body {
     fill: $myfillcolor;
     filter: drop-shadow(10px 13px 13px rgba(162, 178, 223, 0.4));
     stroke: $mystrokecolor;
+}
+@media (min-width: 750px) {
+    .bottomArea {
+        width: 0;
+        height: 0;
+    }
+    .bottomText {
+        width: 0;
+        height: 0;
+    }
+}
+@media (max-width: 600px) {
+    .bottomTexttitle {
+        font-size: 1.8rem;
+    }
+    .bottomTextinfo {
+        font-size: .8rem;
+    }
+}
+@media (max-width: 500px) {
+    .bottomTexttitle {
+        font-size: 1.6rem;
+    }
+ 
+}
+@media (max-width: 400px) {
+    .bottomTexttitle {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 370px) {
+    .bottomTexttitle {
+        font-size: .8rem;
+    }
 }
